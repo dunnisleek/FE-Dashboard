@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+ :root{
+    --fsp:16px;
+    --fsh:25px;
+ }
+*{
+  margin:0px;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    width:100%;
+    background-color: #FFFEFA;
+    position: relative;
+    display: flex;
+}
+
+#menu{
+    background:#ffffff;
+    width:300px;
+    height:100%;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+#menu .logo img{
+    padding-top: 20px;
+    width:160px;
+    padding: 10px 30px;
+}
+
+/* styling the nav link */
+#menu .items{
+    margin-top: 40px;
+    border-top: 1px solid #E5E5E5;
+   
+}
+
+#menu .items li{
+   
+    list-style: none;
+    padding: 10px 30px;
+    transition: 0.3s ease;
+}
+#menu .sub  {
+    margin-left: 29px;
+}
+
+#menu .items li img{
+    width:20px;
+    height: 20px;
+    line-height: 20px;
+   
+    font-size: var(--fsp)
+}
+
+#menu .items li a{
+    text-decoration: none;
+    margin-top: -10px;
+    margin-left: 7px;
+    line-height: 20px;
+    font-size: var(--fsp);
+    color: #666666;
+
+}
+#menu .items li:hover{
+    background: #FBFBFB;
+    cursor: pointer;
+   
+    border-left:4px solid #D9B608 ;
+}
+#menu .items li:hover li
+#menu .items li:hover a{
+color:red;
+}
+
+#menu .items li:nth-child(1){
+    border-left:4px solid #D9B608 ;
+}
+
+#menu .items li:nth-child(9) {
+   
+    border-top: 1px solid #E5E5E5;
+}
+
+ /* width of diff section */
+ #interface{
+    width:calc(100% - 300px);
+   
+    margin-left: 300px;
+    position: relative;
+ }
+ 
+ #interface .navigation{ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 30px ;
+   background-color: #FFFEFA;
+   /* make the icon section fixed so it can scroll the table below */
+   position: fixed; 
+   width:calc(100% - 350px);
+
+ }
+ #interface .profile{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+ }
+ #interface .profile h4{
+ font-family: 'DM Sans', sans-serif;
+ color:#575757;
+ font-size: var(--fsp);
+ }
+
+.profile span{
+        padding: 1px 10px;
+        margin-left: 8px;
+        border-radius: 400px;
+        background: #D9B608;
+ }
+ #interface .profile img{
+    margin-right: 30px;
+  
+ }
+
+ /* end of navigation on interface */
+
+ .title-heading{
+    color:#000000;
+    font-size: var(--fsh);
+    line-height: 35px;
+    padding: 30px 30px 0px 30px;
+    margin-top: 50px;
+ }
+ .title-subhead{
+    padding: 10px 30px 20px 30px;
+    color: #575757;
+    font-size: var(--fsp);
+ }
+ .values ul{
+    font-size:var(--fsp) ;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    padding: 10px 0px 20px 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+   
+ }
+ 
+
+ .values li a{
+    color:#777777;
+    text-decoration: none;
+   
+ }
+ 
+ .values li a:hover {
+    color:#000000;
+    cursor:pointer;
+ }
+ .values li{
+    list-style-type: none;
+    margin-left: 30px;
+ }
+ .values li:nth-child(1){
+    
+    border-bottom: 3px solid #D9B608;
+    margin-left: 0px;
+ }
+
+ #search-form{
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+ }
+ #search-form .search input[type=text]{
+    width:550px;
+    padding: 12px;
+    border:1px solid #E4E4E4;
+    border-radius: 8px;
+    outline:none;
+ }
+
+ form{
+    border: 1px solid #E4E4E4;;
+    width:500px;
+    border-radius: 8px;
+ }
+#vehicle,
+ #Location, 
+ #package-size,
+ #Date{
+   margin: 10px 10px;
+   padding-left: 10px;
+    border:none;
+    font-size: var(--fsp);
+    text-align: center;
+    outline:none;
+ }
+
+ .board{
+    width: 95%;
+    margin: 20px 0px 20px 30px;
+    overflow: auto;
+
+ }
+ thead td{
+    color:#CC5500;
+    font-size: var(--fsp);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 22px;
+    padding-bottom: 20px;
+ }
+ tbody tr td{
+    padding-bottom: 30px;
+ }
+
+ .menu-btn{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+ }
+
+ @media (max-width:769px) {
+    .menu-btn{
+        display: initial;
+    }
+   
+    #menu{
+     
+        width:270px;
+        position:fixed;
+        left:-270px; 
+        display: none;
+       
+    }
+    #interface{
+        width:100%;
+        margin-left: 0px;
+        display: inline-block;
+    }
+    #interface .navigation{ 
+       width:95%;
+     
+      } 
+
+      .board{
+        width:100%;
+        padding: 0;
+        overflow-x:0;
+      }
+      table{
+        width:100%;
+        border-collapse: collapse;
+      }
+
+      #search-form .search input[type=text] {
+        width:250px;
+      }
+
+      form{
+       width:360px;
+       
+     }
+     thead td{
+        color:#CC5500;
+        font-size: 13px;
+        line-height: 15px;
+        width:20px;
+       padding-right: 10px;
+    }
+    tbody tr td{
+       font-size: 12px;
+       padding-right: 10px;
+     }
+    #vehicle,
+     #Location, 
+     #package-size,
+     #Date{
+       margin: 10px 0px;
+       padding-left: 0px;
+       font-size: 14px;
+          
+     }
+     
+ }

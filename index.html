@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FE Dashboard</title>
+  </head>
+
+  <body>
+    <section id="menu">
+      <div class="logo">
+        <img src="images/Group 996.svg" />
+      </div>
+      <!-- nav link -->
+      <div class="items">
+        <li>
+          <img src="images/noun-grid-view-1981317 1.svg" / width="20px">
+          <a href="#"> Dashboard </a>
+        </li>
+        <li>
+          <img src="images/note icon.svg" / width="20px"><a href="#"> Orders</a>  </li>
+          <li class="sub">Active Orders</li>
+          <li class="sub">Delivered</li>
+          <li class="sub">Pending Orders</li>
+          <li class="sub">Cancelled</li>
+      
+        <li>
+          <img src="images/agent.svg" / width="20px"><a href="#"> Agents</a>
+        </li>
+        <li>
+          <img src="images/noun-delivery-truck.svg" / width="20px"><a href="#">
+            vehicles</a>
+        </li>
+        <li>
+          <img class="set-up" src="images/setting.svg" / width="20px"><a href="#">Settings</a>
+        </li>
+      </div>
+    </section>
+    <!-- end of side-nav -->
+
+    <section id="interface">
+      <div class="navigation">
+        <div>
+            <!-- hamburger menu -->
+            <img class="menu-btn" src="images/hamburger.png" width="30px">
+        </div>
+        <div class="profile">
+          <img src="images/bells.svg" />
+          <h4>David Odu <span></span></h4>
+        </div>
+      </div>
+
+      <h3 class="title-heading"> Orders </h3>
+      <p class="title-subhead">Manage all your dispatchers, assign orders, and track orders here.</p>
+
+      <div class="values">
+        <div>
+        <ul>  
+        <li><a href="#">Active Orders </a></li>
+        <li><a href="#">Delivered</a></li>
+        <li><a href="#">Pending Orders</a></li>
+        <li><a href="#">Cancelled</a></li>
+    </ul>  
+    </div>
+      </div>
+       <div id="search-form">
+      <div class="search">
+        <input type="text" name="text" placeholder="search">
+      </div>
+      
+     <form>
+      <select id="vehicle" name="vehicles">
+        <option value="vehicle">Vehicle</option>
+        <option value="Bike">Bike</option>
+        <option value="Car">Car</option>
+        <option value="Truck">Truck</option>
+      </select>
+
+      <select id="Location" name="locations">
+        <option value="Location">Location</option>
+        <option value="Lekki">Lekki</option>
+        <option value="Mainland">Mainland</option>
+        <option value="Agege">Agege</option>
+      </select>
+
+      <select id="package-size" name="package-size">
+        <option value="package size">package size</option>
+        <option value="small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+
+      <select id="Date" name="date">
+        <option value="date">Date</option>
+        <option value="saab">10/2/22</option>
+        <option value="fiat">10/2/22</option>
+      
+      </select>
+      
+   </form>
+   </div>
+
+      <!-- table section -->
+      <div class="board">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Tracking number</td>
+                    <td>Customer name</td>
+                    <td>Customer number</td>
+                    <td>Dispatch name</td>
+                    <td>Vehicle</td>
+                    <td>Location</td>
+                    <td>Package size</td>
+                    <td>Date</td>
+                </tr>
+            </thead>
+
+          <tbody>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="track-num">
+                    <p>18-6589929</p>
+                </td>
+
+                <td class="custom-name">
+                    <p>Ade Lola</p>
+                </td>
+
+                <td class="custom-numb">
+                <p>0806573862587</p>
+                </td>
+
+                <td class="dispatch-name">
+                    <p>Yusuf</p>
+                </td>
+
+                <td class="vehicle">
+                    <p>Bike</p>
+                </td>
+               
+                <td class="location">
+                    <p>Lekki</p>
+                </td>
+
+
+                <td class="pack-size">
+                    <p>small</p>
+                </td>
+
+                <td class="date">
+                    <p>10/2/22</p>
+                </td>
+
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+
+
+</section>
+<script>
+    const menuB = document.getElementById("#menu");
+    const hamburger = document.querySelector(".menu-btn");
+
+    hamburger.addEventListener("click",() =>{
+        menuB.style.display = "block";
+      
+    });
+
+</script>
+  </body>
+</html>
