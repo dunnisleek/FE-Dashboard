@@ -12,6 +12,7 @@
     <section id="menu">
       <div class="logo">
         <img src="images/Group 996.svg" />
+        <p class="close"> x </p>
       </div>
       <!-- nav link -->
       <div class="items">
@@ -42,10 +43,14 @@
 
     <section id="interface">
       <div class="navigation">
+       
         <div>
             <!-- hamburger menu -->
             <img class="menu-btn" src="images/hamburger.png" width="30px">
+            
+            
         </div>
+
         <div class="profile">
           <img src="images/bells.svg" />
           <h4>David Odu <span></span></h4>
@@ -480,13 +485,23 @@
 
 </section>
 <script>
-    const menuB = document.getElementById("#menu");
+    //  const menuB = document.getElementById("menu"); or
+    const menuB = document.querySelector("#menu");
     const hamburger = document.querySelector(".menu-btn");
+    const closeButton = document.querySelector(".close")
 
     hamburger.addEventListener("click",() =>{
         menuB.style.display = "block";
+        
       
     });
+
+    closeButton.addEventListener('click', ()=>{
+        menuB.style.display="none";
+    })
+    // menuB.addEventListener('click', ()=>{
+    //     menuB.style.display="none"
+    // })
 
 </script>
   </body>
