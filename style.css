@@ -6,6 +6,7 @@
  }
 *{
   margin:0px;
+  
 }
 body{
     font-family: 'DM Sans', sans-serif;
@@ -256,20 +257,24 @@ a:link {
  }
  .table-headings{
    display: flex;
+   /* flex-direction: row; */
    align-items: flex-start;
    text-align: left;
    justify-content: space-between;
-  padding: 20px;
-  border:1px solid rgba(0, 0, 0, 0.556);
+  padding: 20px 18px;
+  /* border:1px solid rgba(0, 0, 0, 0.556); */
   margin: 10px 0px;
   font-size: 15px;
   color:#CC5500;
- 
- 
-
-  
+  width: 1117px;
+  max-width: 943px;
  
  }
+ .table-headings p{
+   flex-basis: calc(100%/2%);
+   padding:0 15px;
+ }
+ 
  /* .table-headings {
    
  
@@ -513,11 +518,12 @@ a:link {
      
  }
 
- 
+
  .trigger{
    /* background: #D9B608; */
    display: none;
    cursor: pointer;
+   /* max-width: 1000px; */
  }
  #mutiple{
    display: none;
@@ -566,9 +572,10 @@ a:link {
       text-align: left;
       
     }
-    .trigger{
+    /* .trigger{
+    
       width:800px;
-    }
+    } */
     .table-headings{
       width:800px;
     }
@@ -594,22 +601,25 @@ a:link {
  .trigger {
    display: flex;
    align-items: flex-start;
-   justify-content: space-between;
-  padding: 20px;
-  border:1px solid rgba(0, 0, 0, 0.556);
+   justify-content: space-around;
+  padding: 20px 0px 20px 0px; 
+  /* border:1px solid rgba(0, 0, 0, 0.556); */
   margin: 10px 0px;
   font-size: 15px;
-
+  width: 1117px;
+    max-width: 1056px;
   position: relative;
   
-  
 
  }
- .trigger > p{
-  margin-right: 10px;
+ .trigger  p{
+  /* margin-right: 10px; */
   align-items: left;
+  flex-basis: calc(100%/2%);
+   padding:0 15px;
+  
  }
-
+ 
 
 
  @media (max-width:400px) {
@@ -622,8 +632,9 @@ a:link {
          border-bottom:none;
       }
       .values ul {
-         display: block;
-         padding: 10px 1px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding: 0;
       }
       .values li{
          padding-bottom: 10px;
@@ -632,7 +643,7 @@ a:link {
          padding-left: 28px;
       }
       form {
-         width: 247px;
+         width:262px;
       }
       interface .profile {
       position: fixed;
@@ -662,3 +673,14 @@ a:link {
 
 }
 
+@media screen and (max-width:1050px)
+{
+#search-form{
+     
+      flex-direction: column;
+}
+form{
+   width: 573px;
+    margin-top: 10px;
+}
+}
