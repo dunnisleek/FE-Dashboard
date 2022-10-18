@@ -167,9 +167,8 @@ color:red;
     border-bottom: 1px solid #F3F3F3;
    
  }
- /* .values ul li a:active {
- color: yellow;
- } */
+ 
+ 
  .values .activated{
    color:black;
  }
@@ -193,19 +192,7 @@ a:link {
  a:active {
    color: black;
  }
- /* .values li a{
-    color:#777777;
-    text-decoration: none;
-   
- }
- .values li a:active{
-   color:#000000;
- }
  
- .values li a:hover {
-    color:#000000;
-    cursor:pointer;
- } */
  .values li{
     list-style-type: none;
     margin-left: 30px;
@@ -257,13 +244,8 @@ a:link {
  }
  .table-headings{
    display: flex;
-   /* flex-direction: row; */
-   align-items: flex-start;
-   text-align: left;
-   justify-content: space-between;
-  padding: 20px 18px;
-  /* border:1px solid rgba(0, 0, 0, 0.556); */
-  margin: 10px 0px;
+   
+padding: 10px 0px;
   font-size: 15px;
   color:#CC5500;
   width: 1117px;
@@ -271,47 +253,17 @@ a:link {
  
  }
  .table-headings p{
-   flex-basis: calc(100%/2%);
-   padding:0 15px;
+   padding-left: 5px;
+   min-width: 131px;
+   
+ }
+ .table-headings p:nth-child(4){
+   padding-right: 36px;
+ }
+ .table-headings > .container{
+   margin-right: 10px;
  }
  
- /* .table-headings {
-   
- 
-      display:flex;
-     /* justify-content:space-evenly; *
-   font-size: 15px;
-   flex-wrap:nowrap;
-   gap:40px;
-     padding: 20px 0px;
-     color:#CC5500;
-     margin: 10px 0px;
-     border:2px solid purple;
-
-   
-    } */
-
-   /* justify-content: space-evenly; */
-   
-    /* font-size: var(--fsp);
-    font-family: 'DM Sans', sans-serif;
-    line-height: 22px;
-  
-    padding-bottom: 20px; */
- 
- /* tbody tr td{
-    padding-bottom: 30px;
- } */
- /* .board tr::after{
-   content:'⌄';
-   display: inline-block;
-   position:absolute;
-   right:15px;
-   transform:rotate(90deg) scalr(0.5, 1);
-   font-weight:bold;
-   transition: transform 0.3s;
-
-} */
 
  .menu-btn{
     display: none;
@@ -319,7 +271,13 @@ a:link {
     cursor: pointer;
     margin-right: 20px;
  }
- #mutiple{
+ #mutiple,
+ #aderow,
+ #sixdescription,
+ #fifthdescription,
+ #fourthdescription,
+ #seconddescription
+{
    background: white;
    display:flex;
    justify-content: space-between;
@@ -332,7 +290,15 @@ a:link {
   
   }
 
-  #mutiple .clock-sec{
+  
+  #mutiple .clock-sec,
+  #seconddescription .clock-sec, 
+  #fourthdescription  .clock-sec,
+  #fifthdescription .clock-sec,
+  #sixdescription .clock-sec,
+  #aderow .clock-sec
+
+  {
    display: flex;
    margin-right: 80px;
  
@@ -504,14 +470,14 @@ a:link {
      #mutiple{
      
       /* display: block!important; */
-      width: 500px;
+      width: 750px;
 
      }
 
      
 
      .map img{
-      width: 500px;
+      width: 352px;
       text-align: center;
       padding-left: 10px;
      }
@@ -525,10 +491,23 @@ a:link {
    cursor: pointer;
    /* max-width: 1000px; */
  }
- #mutiple{
+ .trigger > .container{
+   margin-right: 10px;
+ }
+ #mutiple,
+ #aderow,
+ #sixdescription,
+ #fifthdescription,
+ #fourthdescription
+ #seconddescription
+
+
+{
    display: none;
  }
-
+ /* #aderow{
+   display: none;
+} */
  .bloc{
   color:black;
   font-size: 14px;
@@ -579,47 +558,31 @@ a:link {
     .table-headings{
       width:800px;
     }
-    /* .close {
-      display: block;
-        cursor:pointer;
-        z-index: 3;
-        margin-left: 256px;
-     
-        margin-top: 13px;
-        top:0;
-        border: 1px solid grey;
-        position:absolute;
-        border-radius: 80px;
-        line-height: 14px;
-        font-size: 14px;
-        text-align: center;
-        padding: 1px 4px 1px 4px;
-        
-    } */
+  
  }
 
  .trigger {
    display: flex;
-   align-items: flex-start;
-   justify-content: space-around;
-  padding: 20px 0px 20px 0px; 
-  /* border:1px solid rgba(0, 0, 0, 0.556); */
+   
   margin: 10px 0px;
   font-size: 15px;
-  width: 1117px;
-    max-width: 1056px;
+  padding: 10px 0px;
+  /* width: 1117px;
+    max-width: 1056px; */
   position: relative;
   
 
  }
  .trigger  p{
-  /* margin-right: 10px; */
-  align-items: left;
-  flex-basis: calc(100%/2%);
-   padding:0 15px;
+  
+min-width: 131px;
+padding-left: 5px;
   
  }
  
+ .trigger p:nth-child(4){
+   padding-right: 36px;
+ }
 
 
  @media (max-width:400px) {
@@ -670,6 +633,17 @@ a:link {
    padding-top: 20px;
   
  }
+ #mutiple,
+ #aderow,
+ #sixdescription,
+ #fifthdescription,
+ #fourthdescription,
+ #seconddescription
+{
+ 
+   display:block;
+   width:500px;
+   
 
 }
 
